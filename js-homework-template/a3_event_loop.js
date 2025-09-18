@@ -38,13 +38,20 @@ function runA3(){
 
     // Schedule a macrotask (should be LAST overall):
     // TODO: set a timeout that logs "6 timeout"
+    setTimeout(() => log("6 timeout"), 0);
 
     // Schedule a microtask via Promise.then:
     //   Inside that microtask, also enqueue ANOTHER microtask that logs "5 microtask: nested"
     // TODO:
+    Promise.resolve().then(() => {
+        log("3 microtask: promise.then");
+        queueMicrotask(() => log("5 microtask: nested"));
+    });
+
 
 
     // Schedule a queueMicrotask that logs "4 microtask: queueMicrotask"
+    queueMicrotask(() => log("4 microtask: queueMicrotask"));
     // TODO:
 
     // End of synchronous section:
