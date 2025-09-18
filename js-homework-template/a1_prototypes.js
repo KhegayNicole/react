@@ -70,7 +70,7 @@ function runA1() {
 
         // Method sharing: both rectangles should reference the SAME function
         console.log("shared getArea on Rectangle:", r1.getArea === r2.getArea, "(expect true)");
-
+         //
         // Prototype chain checks
         console.log("Shape in chain (sq):", Shape.prototype.isPrototypeOf(sq), "(expect true)");
         console.log("Rectangle in chain (sq):", Rectangle.prototype.isPrototypeOf(sq), "(expect true)");
