@@ -1,0 +1,157 @@
+.about-us-container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.about-us-content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    min-height: 500px;
+}
+
+.about-store-section {
+    flex: 1;
+    background: linear-gradient(135deg, #ffb3ba 0%, #ffdfba 100%);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.section-title {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    font-size: 3rem;
+    font-weight: 300;
+    color: #8b4513;
+    margin: 0;
+    font-family: monospace;
+    letter-spacing: 1px;
+}
+
+.store-description {
+    color: #5d4e37;
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: 'Georgia', serif;
+    margin-top: 20px;
+}
+
+.store-description p {
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #8b4513;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.about-us-section {
+    flex: 1;
+    padding: 40px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: #ffb3d1;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Georgia', serif;
+    letter-spacing: 2px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.feature-icon {
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.feature-text {
+    flex: 1;
+}
+
+.feature-text p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #666;
+    font-family: 'Georgia', serif;
+}
+
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+    .about-us-content {
+        flex-direction: column;
+        margin: 20px;
+    }
+    .about-store-section {
+        order: 2;
+        min-height: 300px;
+    }
+    .about-us-section {
+        order: 1;
+        padding: 30px 20px;
+    }
+    .main-title {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+    .section-title {
+        font-size: 2rem;
+        bottom: 20px;
+        left: 20px;
+    }
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .feature-item {
+        padding: 15px 0;
+    }
+}
