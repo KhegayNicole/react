@@ -1,0 +1,50 @@
+.movies-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.toolbar {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.load-btn,
+.clear-btn {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #835f91;
+    background: #ecbfee;
+    cursor: pointer;
+}
+
+.load-btn:disabled,
+.clear-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.search-input {
+    flex: 1;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #d0d7de;
+}
+
+.error {
+    color: #b3261e;
+}
+
+.grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+.grid-item {
+    min-width: 0;
+}
