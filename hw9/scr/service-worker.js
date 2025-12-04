@@ -7,7 +7,8 @@ const APP_SHELL_ASSETS = [
   '/',
   '/index.html',
   '/manifest.json',
-  '/vite.svg'
+  '/icons/icon-192.svg',
+  '/icons/icon-512.svg'
 ];
 
 // Install: pre-cache app shell
